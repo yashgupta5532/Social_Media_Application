@@ -1,0 +1,26 @@
+.loadingPage{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+.loadingCircle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-top: 10px solid green;
+    border-bottom: 10px solid red;
+    animation: loading linear 1s infinite;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
